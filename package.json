@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "lint": "eslint \"src/**/*.{js,jsx}\"",
     "lint:fix": "eslint \"src/**/*.{js,jsx}\" --fix",
-    "format": "prettier --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\" --config ./.prettierrc"
+    "format": "prettier --write \"./**/*.{js,jsx,ts,tsx,css,scss,md,json}\" --config ./.prettierrc"
   },
   "dependencies": {
     "@emotion/react": "^11.10.4",
