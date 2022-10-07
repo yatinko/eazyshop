@@ -1,6 +1,7 @@
 import { TextInput, ActionIcon, useMantineTheme } from "@mantine/core";
 import { IconSearch, IconArrowRight, IconArrowLeft } from "@tabler/icons";
 
+// SearchBar Component Definition.
 const SearchBar = () => {
   const theme = useMantineTheme();
 

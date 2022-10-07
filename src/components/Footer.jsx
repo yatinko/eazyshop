@@ -1,5 +1,6 @@
 import { createStyles, Container, Group, Anchor } from "@mantine/core";
 
+// Style for the Footer component.
 const useStyles = createStyles((theme) => ({
   footer: {
     marginTop: 120,
@@ -21,10 +22,14 @@ const useStyles = createStyles((theme) => ({
   }
 }));
 
+// Footer Links Objects.
 const links = [{ label: "Source Code", link: "https://github.com/yatinko/eazyshop" }];
 
+//Footer Component Definition.
 const Footer = () => {
   const { classes } = useStyles();
+
+  // Mapping Footer links.
   const items = links.map((link) => (
     <Anchor
       color="dimmed"
@@ -40,10 +45,12 @@ const Footer = () => {
   return (
     <div className={classes.footer}>
       <Container className={classes.inner}>
+        {/* Brand Logo */}
         <h1>eazyshop</h1>
         <Group className={classes.links}>{items}</Group>
       </Container>
     </div>
   );
 };
+
 export default Footer;
