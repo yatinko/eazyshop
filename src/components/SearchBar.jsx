@@ -7,15 +7,15 @@ const SearchBar = () => {
 
   return (
     <TextInput
-      icon={<IconSearch size={28} stroke={1.5} />}
+      icon={<IconSearch size={24} stroke={1.5} />}
       radius="xl"
-      size="md"
+      size="sm"
       rightSection={
-        <ActionIcon size={32} radius="xl" color={theme.primaryColor} variant="filled">
+        <ActionIcon size={24} radius="xl" color={theme.primaryColor} variant="filled">
           {theme.dir === "ltr" ? (
-            <IconArrowRight size={18} stroke={1.5} />
+            <IconArrowRight size={14} stroke={1.5} />
           ) : (
-            <IconArrowLeft size={18} stroke={1.5} />
+            <IconArrowLeft size={14} stroke={1.5} />
           )}
         </ActionIcon>
       }
