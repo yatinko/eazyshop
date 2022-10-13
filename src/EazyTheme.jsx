@@ -11,7 +11,8 @@ const EazyTheme = {
       "#5E666F",
       "#55595D",
       "#4B4D4F"
-    ]
+    ],
+    black: "#000"
   },
   colorScheme: "light",
   fontFamily: "Poppins, sans-serif",
