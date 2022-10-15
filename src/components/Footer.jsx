@@ -31,12 +31,7 @@ const Footer = () => {
 
   // Mapping Footer links.
   const items = links.map((link) => (
-    <Anchor
-      color="dimmed"
-      key={link.label}
-      href={link.link}
-      onClick={(event) => event.preventDefault()}
-      size="sm">
+    <Anchor color="dimmed" key={link.label} href={link.link} size="sm">
       {link.label}
     </Anchor>
   ));
