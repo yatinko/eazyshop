@@ -19,6 +19,12 @@ const useStyles = createStyles((theme) => ({
     marginInline: "1.5em",
     ...theme.fn.hover({ color: theme.colors.black, textDecoration: "unset" })
   },
+  activeLink: {
+    color: location.pathname == "/" ? theme.colors.black : theme.colors.brand,
+    fontWeight: location.pathname == "/" ? "bold" : "none",
+    marginInline: "1.5em",
+    ...theme.fn.hover({ color: theme.colors.black, textDecoration: "unset" })
+  },
   drawerClose: {
     display: "none"
   },
@@ -77,6 +83,10 @@ const NavBar = () => {
       <Popover width={"100%"} trapFocus position="bottom" withArrow shadow="md" opened={opened}>
         {/* Navigation Bar */}
         <Container className={classes.inner}>
+          <Anchor color={theme.colors.brand} href="/" className={classes.activeLink} size="md">
+            Home
+          </Anchor>
+          <Divider orientation="vertical" />
           <div>{linkItems}</div>
         </Container>
         <Divider my="md" />
