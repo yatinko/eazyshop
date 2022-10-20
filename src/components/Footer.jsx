@@ -25,19 +25,13 @@ const useStyles = createStyles((theme) => ({
 // Footer Links Objects.
 const links = [{ label: "Source Code", link: "https://github.com/yatinko/eazyshop" }];
 
-//Footer Component Definition.
+// Footer Component Definition.
 const Footer = () => {
   const { classes } = useStyles();
 
   // Mapping Footer links.
   const items = links.map((link) => (
-    <Anchor
-      color="dimmed"
-      key={link.label}
-      href={link.link}
-      onClick={(event) => event.preventDefault()}
-      size="sm"
-    >
+    <Anchor color="dimmed" key={link.label} href={link.link} size="sm">
       {link.label}
     </Anchor>
   ));
@@ -47,7 +41,7 @@ const Footer = () => {
       <Container className={classes.inner}>
         {/* Brand Logo */}
         <h1>eazyshop</h1>
-        <Group className={classes.links}>{items}</Group>
+        <Group>{items}</Group>
       </Container>
     </div>
   );

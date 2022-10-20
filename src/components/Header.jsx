@@ -1,5 +1,6 @@
 import { createStyles, Header, Group, Button, ActionIcon } from "@mantine/core";
 import SearchBar from "./SearchBar";
+import NavBar from "./NavBar";
 import { IconShoppingCart } from "@tabler/icons";
 
 // Styles foe the Header component.
@@ -18,7 +19,7 @@ const useStyles = createStyles((theme) => ({
 }));
 
 // Header Component Definition.
-function HeaderBar() {
+const HeaderBar = () => {
   const { classes } = useStyles();
   return (
     <Header height={56} className={classes.header} mb={120}>
@@ -41,8 +42,9 @@ function HeaderBar() {
           </Group>
         </Group>
       </div>
+      <NavBar />
     </Header>
   );
-}
+};
 
 export default HeaderBar;
