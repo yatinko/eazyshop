@@ -1,5 +1,6 @@
 import { createStyles, Paper, Text, Title, Button } from "@mantine/core";
 
+// Style object of Card Component
 const useStyles = createStyles((theme) => ({
   card: {
     height: 440,
@@ -28,6 +29,7 @@ const useStyles = createStyles((theme) => ({
   }
 }));
 
+// Defining Card Component
 const Card = ({ image, title, category }) => {
   const { classes } = useStyles();
 

@@ -3,6 +3,7 @@ import { useMediaQuery } from "@mantine/hooks";
 import { useMantineTheme } from "@mantine/core";
 import Card from "./Card";
 
+// Creating Slider Card Component Data(path of Images)
 const data = [
   {
     image:
@@ -20,7 +21,7 @@ const data = [
     image:
       "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
     title: "Click all you want.",
-    category: "Camera"
+    category: "Cameras"
   },
   {
     image:
@@ -32,7 +33,7 @@ const data = [
     image:
       "https://images.unsplash.com/photo-1593121925328-369cc8459c08?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
     title: " Plug it, listen to it, feel it",
-    category: "Audio Grears"
+    category: "Audio Gear"
   },
   {
     image:
@@ -42,9 +43,12 @@ const data = [
   }
 ];
 
+// Defining Slider Component
 const Slider = () => {
   const theme = useMantineTheme();
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm}px)`);
+
+  // Mapping Card data to the Slider Cards
   const slides = data.map((item) => (
     <Carousel.Slide key={item.title}>
       <Card {...item} />
